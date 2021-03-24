@@ -10,7 +10,7 @@
     "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
     "orientation": "landscape",
-    "packageName": "com.example.MousePointerLockExtensionSample",
+    "packageName": "com.pandako.MousePointerLockExtensionSample",
     "projectUuid": "506d38aa-0a4e-410b-a682-3576e0081968",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
