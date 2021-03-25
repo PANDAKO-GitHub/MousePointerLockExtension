@@ -458,7 +458,7 @@
       "name": "MousePointerLockExtension",
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Virtual Reality/Virtual Reality_360_rotate_vr_movement.svg",
       "shortDescription": "This behavior removes the limit on the distance the mouse can move and hides the cursor.",
-      "version": "0.1.1",
+      "version": "0.1.3",
       "tags": [
         "mouse",
         "lock",
@@ -476,10 +476,10 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const canvas = document.getElementsByTagName(\"canvas\")[0];\ngdjs._MousePointerLockExtension = {};\ngdjs._MousePointerLockExtension.movement = { x: 0, y: 0 };\n\ncanvas.addEventListener(\"mousemove\", (e) => {\n    gdjs._MousePointerLockExtension.movement.x = e.movementX || 0;\n    gdjs._MousePointerLockExtension.movement.y = e.movementY || 0;\n}, false);",
+              "inlineCode": "const canvas = runtimeScene.getGame().getRenderer().getCanvas();\n\ngdjs._MousePointerLockExtension = {};\ngdjs._MousePointerLockExtension.movement = { x: 0, y: 0 };\n\ncanvas.addEventListener(\"mousemove\", (e) => {\n    gdjs._MousePointerLockExtension.movement.x = e.movementX || 0;\n    gdjs._MousePointerLockExtension.movement.y = e.movementY || 0;\n}, false);",
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ],
           "parameters": [],
@@ -556,7 +556,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "let canvas = document.getElementsByTagName(\"canvas\")[0];\r\ncanvas.requestPointerLock();",
+              "inlineCode": "const canvas = runtimeScene.getGame().getRenderer().getCanvas();\r\ncanvas.requestPointerLock();",
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
