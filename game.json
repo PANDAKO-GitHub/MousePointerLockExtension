@@ -11,12 +11,15 @@
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.pandako.MousePointerLockExtensionSample",
+    "pixelsRounding": false,
     "projectUuid": "506d38aa-0a4e-410b-a682-3576e0081968",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "MousePointerLockExtension Sample",
+    "description": "",
     "author": "PANDAKO",
     "windowWidth": 800,
     "windowHeight": 600,
@@ -26,68 +29,30 @@
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "showGDevelopSplash": false
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
     },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
     "extensionProperties": [],
-    "extensions": [
-      {
-        "name": "BuiltinObject"
-      },
-      {
-        "name": "BuiltinAudio"
-      },
-      {
-        "name": "BuiltinVariables"
-      },
-      {
-        "name": "BuiltinTime"
-      },
-      {
-        "name": "BuiltinMouse"
-      },
-      {
-        "name": "BuiltinKeyboard"
-      },
-      {
-        "name": "BuiltinJoystick"
-      },
-      {
-        "name": "BuiltinCamera"
-      },
-      {
-        "name": "BuiltinWindow"
-      },
-      {
-        "name": "BuiltinFile"
-      },
-      {
-        "name": "BuiltinNetwork"
-      },
-      {
-        "name": "BuiltinScene"
-      },
-      {
-        "name": "BuiltinAdvanced"
-      },
-      {
-        "name": "Sprite"
-      },
-      {
-        "name": "BuiltinCommonInstructions"
-      },
-      {
-        "name": "BuiltinCommonConversions"
-      },
-      {
-        "name": "BuiltinStringInstructions"
-      },
-      {
-        "name": "BuiltinMathematicalTools"
-      },
-      {
-        "name": "BuiltinExternalLayouts"
-      }
-    ],
     "platforms": [
       {
         "name": "GDevelop JS platform"
@@ -122,9 +87,6 @@
       "disableInputWhenNotFocused": true,
       "mangledName": "New_32scene",
       "name": "New scene",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -132,16 +94,16 @@
       "v": 209,
       "uiSettings": {
         "grid": false,
-        "gridB": 255,
-        "gridG": 180,
+        "gridType": "rectangular",
+        "gridWidth": 32,
         "gridHeight": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
         "snap": true,
-        "windowMask": false,
-        "zoomFactor": 0.904
+        "zoomFactor": 0.904,
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
@@ -151,7 +113,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "locked": false,
           "name": "Wheel",
           "persistentUuid": "5e77a21f-52da-4cab-bef6-2f799e903540",
           "width": 0,
@@ -167,7 +128,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "locked": false,
           "name": "Console",
           "persistentUuid": "da024957-e281-4b0c-8bc6-f87ea716718c",
           "width": 0,
@@ -183,7 +143,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "locked": false,
           "name": "Help",
           "persistentUuid": "1d546c8f-0e72-4cc2-9d00-72b0d4694c51",
           "width": 0,
@@ -197,11 +156,13 @@
       ],
       "objects": [
         {
+          "assetStoreId": "",
           "name": "Wheel",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
+          "effects": [],
           "behaviors": [],
           "animations": [
             {
@@ -236,6 +197,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "Console",
@@ -244,9 +206,11 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
+          "effects": [],
           "behaviors": [],
           "string": "Text",
           "font": "",
+          "textAlignment": "",
           "characterSize": 20,
           "color": {
             "b": 0,
@@ -255,6 +219,7 @@
           }
         },
         {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "Help",
@@ -263,9 +228,11 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
+          "effects": [],
           "behaviors": [],
           "string": "Click the steering wheel to lock the mouse pointer.\nPress the ESC key to release the mouse pointer.",
           "font": "",
+          "textAlignment": "",
           "characterSize": 20,
           "color": {
             "b": 0,
@@ -276,90 +243,71 @@
       ],
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "Console",
                 "=",
                 "\"MovementX : \" + ToString(MousePointerLockExtension::MovementX()) + \"\nMovementY : \" + ToString(MousePointerLockExtension::MovementY()) + \"\n---\nMouseX : \" + ToString(MouseX(\"\", 0)) + \"\nMouseY : \" + ToString(MouseY(\"\", 0))"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MousePointerLockExtension::isPointerLocked"
               },
               "parameters": [
                 "",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "Console",
                 "+",
                 "NewLine() + \"---\nLocked!\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Rotate"
               },
               "parameters": [
                 "Wheel",
                 "MousePointerLockExtension::MovementX() * 10",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MouseButtonReleased"
               },
               "parameters": [
                 "",
                 "Left"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "SourisSurObjet"
               },
               "parameters": [
@@ -367,56 +315,45 @@
                 "",
                 "",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MousePointerLockExtension::RequestPointerLock"
               },
               "parameters": [
                 "",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "KeyReleased"
               },
               "parameters": [
                 "",
                 "Escape"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MousePointerLockExtension::ExitPointerLock"
               },
               "parameters": [
                 "",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "layers": [
@@ -450,7 +387,7 @@
   "eventsFunctionsExtensions": [
     {
       "author": "PANDAKO-GitHub",
-      "description": "This behavior removes the limit on the distance the mouse can move and hides the cursor.\n\nFor example, a user can rotate or continue to manipulate an object by moving the mouse endlessly.\nWithout the pointer lock, the rotation or operation will stop the moment the pointer reaches the edge of the browser or screen.\n\nGame players don't have to worry about leaving the gameplay area or accidentally clicking on another application that moves the mouse focus away from the game.\n\nLocking the pointer locks `MouseX()` and `MouseY()` expressions.\nUse `MovementX()` and `MovementY()` instead.",
+      "category": "",
       "extensionNamespace": "",
       "fullName": "Mouse Pointer Lock",
       "helpPath": "https://github.com/PANDAKO-GitHub/MousePointerLockExtension",
@@ -459,24 +396,44 @@
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Virtual Reality/Virtual Reality_360_rotate_vr_movement.svg",
       "shortDescription": "This behavior removes the limit on the distance the mouse can move and hides the cursor.",
       "version": "0.1.3",
+      "description": [
+        "This behavior removes the limit on the distance the mouse can move and hides the cursor.",
+        "",
+        "For example, a user can rotate or continue to manipulate an object by moving the mouse endlessly.",
+        "Without the pointer lock, the rotation or operation will stop the moment the pointer reaches the edge of the browser or screen.",
+        "",
+        "Game players don't have to worry about leaving the gameplay area or accidentally clicking on another application that moves the mouse focus away from the game.",
+        "",
+        "Locking the pointer locks `MouseX()` and `MouseY()` expressions.",
+        "Use `MovementX()` and `MovementY()` instead."
+      ],
       "tags": [
         "mouse",
         "lock",
         "pointer"
       ],
+      "authorIds": [],
+      "dependencies": [],
       "eventsFunctions": [
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "onFirstSceneLoaded",
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const canvas = runtimeScene.getGame().getRenderer().getCanvas();\n\ngdjs._MousePointerLockExtension = {};\ngdjs._MousePointerLockExtension.movement = { x: 0, y: 0 };\n\ncanvas.addEventListener(\"mousemove\", (e) => {\n    gdjs._MousePointerLockExtension.movement.x = e.movementX || 0;\n    gdjs._MousePointerLockExtension.movement.y = e.movementY || 0;\n}, false);",
+              "inlineCode": [
+                "const canvas = runtimeScene.getGame().getRenderer().getCanvas();",
+                "",
+                "gdjs._MousePointerLockExtension = {};",
+                "gdjs._MousePointerLockExtension.movement = { x: 0, y: 0 };",
+                "",
+                "canvas.addEventListener(\"mousemove\", (e) => {",
+                "    gdjs._MousePointerLockExtension.movement.x += e.movementX || 0;",
+                "    gdjs._MousePointerLockExtension.movement.y += e.movementY || 0;",
+                "}, false);"
+              ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": true
@@ -486,15 +443,12 @@
           "objectGroups": []
         },
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "onScenePostEvents",
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "gdjs._MousePointerLockExtension.movement = { x: 0, y: 0 };",
               "parameterObjects": "",
@@ -513,8 +467,6 @@
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "eventsFunctionContext.returnValue = gdjs._MousePointerLockExtension.movement.x || 0;",
               "parameterObjects": "",
@@ -522,6 +474,9 @@
               "eventsSheetExpanded": false
             }
           ],
+          "expressionType": {
+            "type": "expression"
+          },
           "parameters": [],
           "objectGroups": []
         },
@@ -533,8 +488,6 @@
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "eventsFunctionContext.returnValue = gdjs._MousePointerLockExtension.movement.y || 0;",
               "parameterObjects": "",
@@ -542,6 +495,9 @@
               "eventsSheetExpanded": false
             }
           ],
+          "expressionType": {
+            "type": "expression"
+          },
           "parameters": [],
           "objectGroups": []
         },
@@ -553,10 +509,11 @@
           "sentence": "Request Pointer Lock",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const canvas = runtimeScene.getGame().getRenderer().getCanvas();\r\ncanvas.requestPointerLock();",
+              "inlineCode": [
+                "const canvas = runtimeScene.getGame().getRenderer().getCanvas();\r",
+                "canvas.requestPointerLock();"
+              ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
@@ -573,8 +530,6 @@
           "sentence": "Exit pointer lock",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "document.exitPointerLock();",
               "parameterObjects": "",
@@ -593,8 +548,6 @@
           "sentence": "The mouse pointer is locked",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "eventsFunctionContext.returnValue = document.pointerLockElement ? true : false;",
               "parameterObjects": "",
@@ -606,7 +559,8 @@
           "objectGroups": []
         }
       ],
-      "eventsBasedBehaviors": []
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
     }
   ],
   "externalLayouts": [],
